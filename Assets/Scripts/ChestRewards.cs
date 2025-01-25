@@ -10,6 +10,7 @@ public class ChestRewards : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         controller = player.GetComponent<PlayerController>();
         o2 = player.GetComponent<OxigenMeter>();
     }
@@ -26,13 +27,17 @@ public class ChestRewards : MonoBehaviour
         {
             case 1:
                 controller.speed *=1.5f;
+                Debug.Log("First Reward");
                 break;
             case 2:
                 o2.oxigenFull *= 1.5f;
+                Debug.Log("Second Reward");
                 break;
             case 3:
+                Debug.Log("Third Reward");
                 break;
             default:
+                Debug.Log("Error");
                 break;
         }
     }
