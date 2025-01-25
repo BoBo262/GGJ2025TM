@@ -40,5 +40,6 @@ public class ChestRewards : MonoBehaviour
                 Debug.Log("Error");
                 break;
         }
+        Destroy(gameObject);
     }
 }

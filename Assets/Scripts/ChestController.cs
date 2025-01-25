@@ -28,6 +28,7 @@ public class ChestController : MonoBehaviour
         {
             BulletBehavior bubble = collision.gameObject.GetComponent<BulletBehavior>();
             damage.TakeDamage(bubble.damage);
+            Destroy(bubble.gameObject);
             if (damage.destroyed)
             {
                 OnDestroy();

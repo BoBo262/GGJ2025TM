@@ -23,10 +23,9 @@ public class ChestOpening : MonoBehaviour
         if(collision.gameObject.tag=="Player")
         {
             rewards.player = collision.gameObject;
-
-            rewards.rewardTable(Random.Range(1,4));
             rewards.controller = rewards.player.GetComponent<PlayerController>();
             rewards.o2 = rewards.player.GetComponent<OxigenMeter>();
+            rewards.rewardTable(Random.Range(1,4));
         }
     }
 }
