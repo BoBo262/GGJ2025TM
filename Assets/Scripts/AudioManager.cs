@@ -2,6 +2,7 @@ using UnityEngine.Audio;
 using System;
 using UnityEngine;
 using DG.Tweening;
+using Unity.VisualScripting;
 
 public class AudioManager : MonoBehaviour
 {
@@ -33,13 +34,35 @@ public class AudioManager : MonoBehaviour
             s.audioS.outputAudioMixerGroup = s.mixer;
         }
     }
-
-    public void PlaySound(string soundName)
+    public void StopSound(string soundName)
     {
         SoundClass s = Array.Find(sounds, sound => sound.name == soundName);
         if (s == null)
             return;
 
-        s.audioS.PlayOneShot(s.clip);
+        // Stop playback of the sound
+        if (s.audioS.isPlaying)
+        {
+            s.audioS.Stop();
+        }
+    }
+
+    public void PlaySound(string soundName, bool overlapping = true)
+    {
+        SoundClass s = Array.Find(sounds, sound => sound.name == soundName);
+        if (s == null)
+            return;
+
+        if (overlapping)
+        {
+            s.audioS.PlayOneShot(s.clip);
+        }
+        else
+        {
+            if (!s.audioS.isPlaying)
+                s.audioS.PlayOneShot(s.clip);
+        }
     }
 }
+
+

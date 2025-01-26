@@ -32,6 +32,7 @@ public class PirateShooting : MonoBehaviour
         {
             canFire = false;
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);
+            AudioManager.Instance.PlaySound("CanonBall");
         }
     }
 }

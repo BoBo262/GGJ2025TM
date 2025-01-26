@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3671698837843111588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8403480633255619469}
+  - component: {fileID: 6269877692184194944}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8403480633255619469
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3671698837843111588}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6269877692184194944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3671698837843111588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a370c54fe7fad94386f706fe3130ae3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Bubble_Burst
+    clip: {fileID: 8300000, guid: 05cb963427fc43f4ea82046f04e24b37, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: Bubble_Burst2
+    clip: {fileID: 8300000, guid: 5c27c5ed215307946b5afff5a1510f49, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: Bubble_Burst3
+    clip: {fileID: 8300000, guid: ca7f38683d1f44c47ad631a7334ea374, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: Bubble_Burst4
+    clip: {fileID: 8300000, guid: 13da27f64218c2443bfb967020a5e4cd, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: CanonBall2
+    clip: {fileID: 8300000, guid: 3b5689b89a2037d489ed9d62e854101b, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: CanonBall
+    clip: {fileID: 8300000, guid: c4ce2e8c6771bc148a01c05a64d44754, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: CanonBall3
+    clip: {fileID: 8300000, guid: edef66e08bfa65f49bb662f977bc55cd, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: ChestDamage
+    clip: {fileID: 8300000, guid: a28a38aeb3dfe774fb370fc8abcce5bb, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: ChestOpen
+    clip: {fileID: 8300000, guid: ac6f1d086a3498e4588d2332c395f913, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: ChestOpen2
+    clip: {fileID: 8300000, guid: 923d9bdb41a23254685e4639407ba292, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: HelpMe
+    clip: {fileID: 8300000, guid: b37c2acdf80ca134eb92e1d86c042a2b, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: NoAir
+    clip: {fileID: 8300000, guid: 921e39f1f9e5a714e837a310498afd72, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: ShipCreaks
+    clip: {fileID: 8300000, guid: 52fa5ed34e5d9674791e4ac433eeac88, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: SirenLure
+    clip: {fileID: 8300000, guid: 7d2d403c387e2dc468dd7a69ddc84a72, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: Swim
+    clip: {fileID: 8300000, guid: acf8776b597114245bf89e8a8a70cebe, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: Swim2
+    clip: {fileID: 8300000, guid: 0187d664c8077e04ebeefb3ceff3103d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: Theme
+    clip: {fileID: 8300000, guid: 24dd5468ea58d7e4fbd4075f46d74e43, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: UnderwaterWaves
+    clip: {fileID: 8300000, guid: b5f4870cbacbbda438c5cd329c42eddd, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: UnderwaterWaves2
+    clip: {fileID: 8300000, guid: 4f8ea90204bc59648b917fc31a2a13c5, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: Voice
+    clip: {fileID: 8300000, guid: f3a50d982d811674f98e1f1f7b9aba04, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: Voice2
+    clip: {fileID: 8300000, guid: fbef5ce79c40f4f47bff106f419348b8, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: WaterJump
+    clip: {fileID: 8300000, guid: cb36400e2c8e15b42bd0b863607444ae, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: WaterJump2
+    clip: {fileID: 8300000, guid: 0c7f5b4c2d538e449a686f5d3352db28, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: Waves
+    clip: {fileID: 8300000, guid: 727ec1e549c55154fa5f383465e216ea, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
+  - name: Waves2
+    clip: {fileID: 8300000, guid: 7df0a85fd6487cd459c7097c2869d9f2, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}

@@ -20,10 +20,15 @@ public class OxigenMeter : MonoBehaviour
         {
             oxigenCurr -= Time.deltaTime*2;
         }
+        if (oxigenCurr==20)
+        {
+            AudioManager.Instance.PlaySound("HelpMe", true);
+        }
         if (oxigenCurr <=0.01)
         {
             oxigenCurr = 0;
             Debug.Log("No more oxigen");
+            
         }
         if (oxigenCurr > oxigenFull)
             oxigenCurr = oxigenFull;
