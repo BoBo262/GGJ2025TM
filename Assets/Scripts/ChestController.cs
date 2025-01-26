@@ -43,6 +43,7 @@ public class ChestController : MonoBehaviour
         if(openChest!=null)
         {
             openChest.gameObject.SetActive(true);
+            AudioManager.Instance.PlaySound("ChestOpen"); 
         }
 
         closedChest = GetComponentInChildren<ClosedChest>();

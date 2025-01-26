@@ -46,6 +46,7 @@ public class Shooting : MonoBehaviour
             canFire = false;
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);
             o2.oxigenCurr -= oLoss;
+            AudioManager.Instance.PlaySound("Bubble_Burst3");
         }
     }
 }
