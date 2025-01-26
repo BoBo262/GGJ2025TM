@@ -5,6 +5,7 @@ using UnityEngine;
 public class PirateHealth : MonoBehaviour
 {
     DamageSink damagePirate;
+    public WinCondition winning;
     [SerializeField] public float health;
     // Start is called before the first frame update
     void Start()
@@ -36,6 +37,7 @@ public class PirateHealth : MonoBehaviour
     public void OnDestroy()
     {
         Debug.Log("Pirate Killed");
+        winning.pirateDeaths++;
         Destroy(gameObject);
 
     }
