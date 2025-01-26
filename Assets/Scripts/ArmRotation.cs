@@ -8,7 +8,6 @@ public class ArmRotation : MonoBehaviour
     public Transform mermaid;
     void Start()
     {
-        mermaid= GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame

@@ -13,7 +13,7 @@ public class BallBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gunFront=GameObject.FindGameObjectWithTag("PirateHand").transform;
+        gunFront=GameObject.FindGameObjectWithTag("Player").transform;
         rb = GetComponent<Rigidbody2D>();
         Vector3 direction = gunFront.position - transform.position;
         Vector3 rotation = transform.position - gunFront.position;
