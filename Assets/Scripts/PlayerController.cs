@@ -33,6 +33,21 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector2(horizontal * speed, vertical * speed);
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.name == "MoonPointer")
+        {
+            AudioManager.Instance.PlaySound("Waves", false);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.name == "MoonPointer")
+        {
+            AudioManager.Instance.StopSound("Waves");
+        }
+    }
+
     private void OnCollisionExit2D(Collision2D collision)
     {
         rb.velocity = new Vector2(0,0);
