@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bubble
+  - PirateHand
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -44,6 +46,27 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 1097895171
+    locked: 0
+  - name: Waves1
+    uniqueID: 2343205045
+    locked: 0
+  - name: ShipTop
+    uniqueID: 1508731967
+    locked: 0
+  - name: ShipPirate
+    uniqueID: 972525917
+    locked: 0
+  - name: PirateHand
+    uniqueID: 2777801625
+    locked: 0
+  - name: ShipBottom
+    uniqueID: 64525023
+    locked: 0
+  - name: Waves2
+    uniqueID: 3036609253
+    locked: 0
+  - name: ForeGround
+    uniqueID: 690427863
     locked: 0
   - name: Player
     uniqueID: 177369527
