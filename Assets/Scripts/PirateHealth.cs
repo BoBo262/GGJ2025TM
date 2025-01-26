@@ -36,6 +36,7 @@ public class PirateHealth : MonoBehaviour
     public void OnDestroy()
     {
         Debug.Log("Pirate Killed");
+        AudioManager.Instance.PlaySound("PirateDeath");
         Destroy(gameObject);
 
     }
