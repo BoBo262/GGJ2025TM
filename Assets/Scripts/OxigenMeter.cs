@@ -24,6 +24,7 @@ public class OxigenMeter : MonoBehaviour
         {
             oxigenCurr = 0;
             Debug.Log("No more oxigen");
+            AudioManager.Instance.PlaySound("HelpMe", true);
         }
         if (oxigenCurr > oxigenFull)
             oxigenCurr = oxigenFull;

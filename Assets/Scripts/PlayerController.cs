@@ -21,6 +21,10 @@ public class PlayerController : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
+        if (rb.velocity != new Vector2(0, 0))
+        {
+            AudioManager.Instance.PlaySound("Swim", false);
+        }
         
     }
 
