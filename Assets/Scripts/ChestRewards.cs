@@ -7,6 +7,7 @@ public class ChestRewards : MonoBehaviour
     public GameObject player;
     public PlayerController controller;
     public OxigenMeter o2;
+    public game_scene_button chestCount;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +41,7 @@ public class ChestRewards : MonoBehaviour
                 Debug.Log("Error");
                 break;
         }
+        chestCount.chestCheck++;
         Destroy(gameObject);
     }
 }

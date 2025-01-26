@@ -5,10 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/SceneFlavia.unity
+    guid: 00680081db5bd2c428b4043fbff4e0d6
+  - enabled: 1
+    path: Assets/Scenes/Instructions.unity
+    guid: 3dc09ad73af716745af49e230a9e6ff0
+  - enabled: 1
     path: Assets/Scenes/Scene1.unity
     guid: 5877f8414753dc5489d912e67a2b2879
   - enabled: 1
