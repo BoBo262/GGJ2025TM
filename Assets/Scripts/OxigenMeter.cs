@@ -22,12 +22,13 @@ public class OxigenMeter : MonoBehaviour
         }
         if (oxigenCurr==20)
         {
-            AudioManager.Instance.PlaySound("HelpMe", true);
+            AudioManager.Instance.PlaySound("HelpMe");
         }
         if (oxigenCurr <=0.01)
         {
             oxigenCurr = 0;
             Debug.Log("No more oxigen");
+            AudioManager.Instance.PlaySound("NoAir");
             
         }
         if (oxigenCurr > oxigenFull)

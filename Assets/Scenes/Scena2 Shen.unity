@@ -1209,6 +1209,13 @@ MonoBehaviour:
     loop: 0
     mixer: {fileID: 0}
     audioS: {fileID: 0}
+  - name: Hurt
+    clip: {fileID: 8300000, guid: 7df0a85fd6487cd459c7097c2869d9f2, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    mixer: {fileID: 0}
+    audioS: {fileID: 0}
 --- !u!4 &918518811
 Transform:
   m_ObjectHideFlags: 0

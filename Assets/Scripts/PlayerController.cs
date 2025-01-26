@@ -39,6 +39,8 @@ public class PlayerController : MonoBehaviour
         {
             AudioManager.Instance.PlaySound("Waves", false);
         }
+        else
+            AudioManager.Instance.PlaySound("UnderwaterWaves");
     }
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -46,6 +48,8 @@ public class PlayerController : MonoBehaviour
         {
             AudioManager.Instance.StopSound("Waves");
         }
+        else
+            AudioManager.Instance.PlaySound("UnderwaterWaves2");
     }
 
     private void OnCollisionExit2D(Collision2D collision)
